@@ -1,0 +1,12 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<h1>Sched</h1>
+
+<p>profile: <strong>{{ user }}</strong></p>
+
+<img class="profile-image" src="{{ profile_image }}">
+
+{% endblock %}

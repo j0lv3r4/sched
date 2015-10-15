@@ -1,0 +1,11 @@
+.app {
+  max-width: 45em;
+  margin: 0 auto;
+}
+
+.profile-image {
+  display: block;
+  max-width: 10em;
+  margin: 0 auto;
+  border-radius: 50%;
+}

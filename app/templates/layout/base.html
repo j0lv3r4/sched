@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  {% block head %}{% endblock %}
+
+  <title>{% block title %}{% endblock %} - Sched</title>
+
+  <link rel="icon" href="{{ url_for('static', filename="favicon.ico")  }}">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename="apple-touch-icon.png")  }}">
+
+  <link href="http://adwhite.github.io/whiteboard/styles.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css')  }}" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    {% block content %}{% endblock %}
+  </div> <!-- .app -->
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>
