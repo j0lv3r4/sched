@@ -14,9 +14,13 @@ def before_first_request():
 
 from app.views import home
 from app.views import user 
+from app.views import post
+from app.views import admin 
 
 app.register_blueprint(home.mod)
 app.register_blueprint(user.mod)
+app.register_blueprint(post.mod)
+app.register_blueprint(admin.mod)
 
 # @app.errorhandler(403)
 # def forbidden_page(error):

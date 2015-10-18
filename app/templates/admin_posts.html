@@ -1,0 +1,16 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Admin{% endblock %}
+
+{% block content %}
+<h1>Admin</h1>
+
+{% for post in posts %}
+  <div>
+    <p>{{ post.title }}<br>
+    {{ post.id }}<br>
+    {{ post.user_id }}</p>
+  </div>
+  <hr>
+{% endfor %}
+{% endblock %}

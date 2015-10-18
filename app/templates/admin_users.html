@@ -1,0 +1,15 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Admin{% endblock %}
+
+{% block content %}
+<h1>Admin</h1>
+
+{% for user in users %}
+  <div>
+    <p>{{ user.username }}<br>
+    {{ user.id }}</p>
+  </div>
+  <hr>
+{% endfor %}
+{% endblock %}

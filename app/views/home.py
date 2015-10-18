@@ -12,4 +12,3 @@ def home():
         return redirect(url_for('user.profile'))
     else:
         return render_template('index.html')
-

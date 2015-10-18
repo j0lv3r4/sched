@@ -5,8 +5,18 @@
 {% block content %}
 <h1>Sched</h1>
 
+<a class="button" href="{{ url_for('user.logout') }}">Logout</a>
+
 <p>profile: <strong>{{ user }}</strong></p>
 
 <img class="profile-image" src="{{ profile_image }}">
+
+<a class="button" href="{{ url_for('post.add_post') }}">Add some posts</a>
+
+<ul>
+{% for post in posts %}
+  <li>{{ post.title }}</li> 
+{% endfor %}
+</ul>
 
 {% endblock %}
